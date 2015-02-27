@@ -4,7 +4,8 @@ $file = fopen("../dentist.csv", "r");
 echo "<pre>";
 
 while (!feof($file)) {
-  print_r(fgetcsv($file)); // 7
+  //print_r(fgetcsv($file)); // 7
+  echo fgetcsv($file)[13]."<br>"; // 8
 }
 echo "</pre>";
 
