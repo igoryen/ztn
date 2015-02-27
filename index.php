@@ -29,9 +29,17 @@ echo "</pre>";
 
 fclose($file);
 
-$names = file_get_contents("result2.txt");
-echo $names;
+$lines = file_get_contents("result2.txt");
 
+$lines = explode("}{", $lines);
+//print_r($lines);
+var_dump($lines);
+//echo "<pre>";
+//foreach($lines as $name){
+//  echo $name ."<br>";
+//  //var_dump($name);
+//}
+//echo "</pre>";
 
 echo "<br>============================================<br>";
 $ch = curl_init("http://zip.getziptastic.com/v2/US/48867"); // 1
