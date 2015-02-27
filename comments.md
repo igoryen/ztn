@@ -52,3 +52,7 @@ C =  `false` - `mixed $value`, the value to be set on option, here - a stream
 `fgetcsv(A)`
 Use A to open a file, gets one line from A and parse for CSV fields
 A = a valid file pointer to a file successfully opened by `fopen()`, `popen()`, or `fsockopen()`.
+
+8
+--
+get an array and read the value of its element 13 i.e. "postal code"
