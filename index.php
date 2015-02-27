@@ -1,5 +1,15 @@
 <?php
 
+$file = fopen("../dentist.csv", "r");
+echo "<pre>";
+
+while (!feof($file)) {
+  print_r(fgetcsv($file)); // 7
+}
+echo "</pre>";
+
+fclose($file);
+
 
 $ch = curl_init("http://zip.getziptastic.com/v2/US/48867"); // 1
 $fp = fopen("result.txt", "w"); // 5
