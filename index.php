@@ -1,7 +1,7 @@
 <?php
 
 
-$ch = curl_init("http://en.wikipedia.org/wiki/CURL"); // 1
+$ch = curl_init("http://zip.getziptastic.com/v2/US/48867"); // 1
 $fp = fopen("result.txt", "w"); // 5
 
 curl_setopt($ch, CURLOPT_FILE, $fp); // 2
